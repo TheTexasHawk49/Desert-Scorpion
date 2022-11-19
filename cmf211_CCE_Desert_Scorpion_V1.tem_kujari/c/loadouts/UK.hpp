@@ -228,28 +228,38 @@ class sf_rifleman {//Gren Special Forces
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
   backpackItems[] = {BASE_MEDICAL};
-  weapons[] = {SF_SMG};
-  magazines[] = {SF_SMG_MAG,BASE_GRENADES};
+  weapons[] = {GLRIFLE};
+  magazines[] = {GLRIFLE_MAG,BASE_GRENADES};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
-  
 };
+  
 class sf_lat: sf_rifleman {//LAT Special Forces 
   launchers[] = {AT};
+  weapons[] = {SF_SMG};
   magazines[] = {SF_SMG_MAG,AT_MAG,AT_MAG,AT_MAG};
 };
+
 class sf_ftl: sf_rifleman {//FTL Special Forces 
   linkedItems[] = {LINKED,LEADER_LINKED};
+  weapons[] = {SF_SMG};
+  magazines[] = {SF_SMG_MAG};
 }; 
+
+class sf_sl: sf_ftl {//Squad Lead Special Forces  
+};
+
  class sf_rifleman_02: sf_rifleman {//RTO Special Forces 
   backpack[] = {fow_b_uk_p37_radio};
   items[] += {RADIO_LR,RADIO_MR};
+  weapons[] = {GLRIFLE};
+  magazines[] = {GLRIFLE_MAG}
 };
+
  class sf_sm: sf_rifleman {//Medic Special Forces 
   backpackItems[] = {MEDIC_MEDICAL,MEDIC_GRENADES};
- }; 
- class sf_sl: sf_rifleman {//Squad Lead Special Forces  
-};
+}; 
+ 
 
 
 
