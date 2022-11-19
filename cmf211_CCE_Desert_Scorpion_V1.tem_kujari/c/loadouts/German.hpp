@@ -140,7 +140,7 @@ class rifleman {// rifleman
   attachments[] = {RIFLE_ATTACHMENTS};
   opticChoices[] = {ALT_OPTICS};
 //  goggles[] = {GOG};
-  face[] = {F_USA};
+//  face[] = {F_USA};
 };
 class Fic_Soldier_Carbine: rifleman {// carbine-man
   weapons[] = {CARBINE};
@@ -174,15 +174,17 @@ class xo: coy {// XO
 };
 class sgt: plt {// Platoon Sergeant
 };
-class fac: plt {// FAC
+class fac: plt {// RTO
   magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED};
   headgear[] = {"H_LIB_DAK_Cap"};
   goggles[] = {"G_LIB_GER_Headset"};
   uniform[] = {CAMO_UNIFORM};
   backpack[] = {"B_LIB_GER_Radio_ACRE2"};
+  items[] += {RADIO_LR,RADIO_MR};
 };
-class uav: fac { //UAV
+class uav: fac { //FO
+items[] += {RADIO_LR};
 };
 
 //Medics

@@ -171,6 +171,7 @@ class coy: plt {// CO and PL
 };
 class xo: coy {// XO
   headgear[] = {fow_h_uk_bp_beret};
+  items[] += {RADIO_LR,RADIO_MR};
 };
 class sgt: plt {// Platoon Sergeant
   headgear[] = {fow_h_uk_bp_beret};
@@ -184,6 +185,7 @@ class fac: coy {// RTO
   items[] += {RADIO_LR,RADIO_MR};
 };
 class uav: fac { //FO
+items[] += {RADIO_LR};
 };
 
 
