@@ -18,13 +18,5 @@ params [
     ["_cfBase", objNull, [objNull]]
 ];
 
-_condition = 
-{
-    typeOf player isEqualTo "potato_i_eng" || 
-    typeOf player isEqualTo "potato_i_engl" || 
-    typeOf player isEqualTo "potato_w_engl" ||
-    typeOf player isEqualTo "potato_w_eng"
-};
-
-private _action = ["KPCF", localize "STR_KPCF_TITLE", "KPCF\img\kplogo_ca.paa", {[_this] call KPCF_fnc_openDialog;}, _condition] call ace_interact_menu_fnc_createAction;
+private _action = ["KPCF", localize "STR_KPCF_TITLE", "KPCF\img\kplogo_ca.paa", {[_this] call KPCF_fnc_openDialog;}, {true}] call ace_interact_menu_fnc_createAction;
 [_cfBase, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;

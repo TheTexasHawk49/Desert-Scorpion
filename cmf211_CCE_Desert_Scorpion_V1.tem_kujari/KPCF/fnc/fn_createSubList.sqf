@@ -36,8 +36,7 @@ if (_weaponIndex == -1) exitWith {
 // Weapon selection
 private _weaponType = _ctrlWeapon lbData _weaponIndex;
 
-private _config = ""; 
-private _folded = ["cup_optic_1p87_1p90_blk_dwn","cup_optic_aimm_microt1_blk_dwn","vme_eotech_557_magnifier_up","cup_optic_aimm_zddot_blk_dwn","cup_optic_aimm_mars_od_dwn","cup_optic_aimm_mars_tan_dwn","cup_optic_aimm_mars_blk_dwn","cup_optic_aimm_compm2_od_dwn","cup_optic_aimm_compm2_tan_dwn","cup_optic_aimm_compm2_blk_dwn","cup_optic_aimm_m68_od_dwn","cup_optic_aimm_m68_tan_dwn","cup_optic_aimm_m68_blk_dwn","cup_optic_g33_hws_od_dwn","cup_optic_g33_hws_tan_dwn","cup_optic_g33_hws_coyote_dwn","cup_optic_g33_hws_blk_dwn","cup_optic_aimm_compm4_blk_dwn","cup_optic_aimm_microt1_od_dwn","cup_optic_aimm_microt1_tan_dwn"];
+private _config = "";
 
 switch (_catIndex) do {
 
@@ -69,17 +68,11 @@ switch (_catIndex) do {
         private _index = 0;
 
         // Fill controls
-        {	
-			private _optic = toLower (_x select 1);
-		    private _isFolded = _optic in _folded;
-			private _magnified = [_x select 1] call potato_assignGear_fnc_isOpticMagnified;
-			if !(_magnified or _isFolded) then {
+        {
             _index = _ctrlEquipment lbAdd (_x select 0);
             _ctrlEquipment lbSetData [_index , _x select 1];
             _config = [_x select 1] call KPCF_fnc_getConfigPath;
             _ctrlEquipment lbSetPicture [_index, getText (configFile >> _config >> (_x select 1) >> "picture")];
-			};
         } forEach _sortedAttachments;
     };
 };
-

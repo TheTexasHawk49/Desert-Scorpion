@@ -23,8 +23,9 @@ cmfVers = "CMF2 1.1";
 #include "c\params.hpp"
 
 // Respawn Settings
-respawn = 1;
-respawndelay = 3;
+respawn = "Base";
+Respawndelay = 999;
+DisabledAi = 1;
 respawnButton = 1;
 respawnOnStart = -1;
 
