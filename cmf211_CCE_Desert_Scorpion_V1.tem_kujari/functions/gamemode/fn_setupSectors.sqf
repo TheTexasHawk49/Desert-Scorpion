@@ -7,27 +7,27 @@
 	{
 		case sideUnknown:
 		{
-			"[CCO] Chateau is neutralized" remoteExec ["systemChat"];
-			americaControlsAllSectors = false;
+			"[CCE] Chateau is neutralized" remoteExec ["systemChat"];
+			greatbritainControlsAllSectors = false;
 		};
 		case WEST:
 		{
 			Hill92Trigger enableSimulationGlobal true;
-			"[CCO] Chateau captured by Germany" remoteExec ["systemChat"];
+			"[CCE] Chateau captured by Germany" remoteExec ["systemChat"];
 			// Complete task
 			["wtask1","SUCCEEDED"] call BIS_fnc_taskSetState;
 			// new task
 			//[WEST, ["wtask2"], ["Secure Hill 92", "Take Hill 92", ""], getPos SHill92, "AUTOASSIGNED"] call BIS_fnc_taskCreate;
-			americaControlsAllSectors = false;
+			greatbritainControlsAllSectors = false;
 		};
 		case INDEPENDENT:
 		{
 			if ((SHill92 getVariable "owner") isNotEqualTo INDEPENDENT) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			Hill92Trigger enableSimulationGlobal false;
-			"[CCO] Chateau captured by America" remoteExec ["systemChat"];
-			// American victory countdown
-			americaControlsAllSectors = true;
-			[] spawn CCO_fnc_americanVictoryCountdown;
+			"[CCE] Chateau captured by Great Britain" remoteExec ["systemChat"];
+			// Great Britain victory countdown
+			greatbritainControlsAllSectors = true;
+			[] spawn CCO_fnc_greatbritainnVictoryCountdown;
 		};
 	};
 }] call BIS_fnc_addScriptedEventHandler;
@@ -40,13 +40,13 @@
 	{
 		case sideUnknown:
 		{
-			"[CCO] Hill 92 is contested" remoteExec ["systemChat"];
+			"[CCE] Hill 92 is contested" remoteExec ["systemChat"];
 		};
 		case WEST:
 		{
 			if ((SChateau getVariable "owner") isEqualTo sideUnknown && (SNeaville getVariable "owner") isEqualTo INDEPENDENT) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			ChateauTrigger enableSimulationGlobal false;
-			"[CCO] Hill 92 captured by Germany" remoteExec ["systemChat"];
+			"[CCE] Hill 92 captured by Germany" remoteExec ["systemChat"];
 			NeavilleTrigger enableSimulationGlobal true;
 			// Complete task
 			//["wtask2","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -57,7 +57,7 @@
 		{
 			if ((SNeaville getVariable "owner") isEqualTo sideUnknown && (SChateau getVariable "owner") isEqualTo WEST) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			NeavilleTrigger enableSimulationGlobal false;
-			"[CCO] Hill 92 captured by America" remoteExec ["systemChat"];
+			"[CCE] Hill 92 captured by Great Britain" remoteExec ["systemChat"];
 			ChateauTrigger enableSimulationGlobal true;
 			// Complete task
 			//["itask4","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -75,13 +75,13 @@
 	{
 		case sideUnknown:
 		{
-			"[CCO] Neaville is contested" remoteExec ["systemChat"];
+			"[CCE] Neaville is contested" remoteExec ["systemChat"];
 		};
 		case WEST:
 		{
 			if ((SHill92 getVariable "owner") isEqualTo sideUnknown && (SHill93 getVariable "owner") isEqualTo INDEPENDENT) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			Hill92Trigger enableSimulationGlobal false;
-			"[CCO] Neaville captured by Germany" remoteExec ["systemChat"];
+			"[CCE] Neaville captured by Germany" remoteExec ["systemChat"];
 			Hill93Trigger enableSimulationGlobal true;
 			// Complete task
 			//["wtask3","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -92,7 +92,7 @@
 		{
 			if ((SHill93 getVariable "owner") isEqualTo sideUnknown && (SHill92 getVariable "owner") isEqualTo WEST) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			Hill93Trigger enableSimulationGlobal false;
-			"[CCO] Neaville captured by America" remoteExec ["systemChat"];
+			"[CCE] Neaville captured by Great Britain" remoteExec ["systemChat"];
 			Hill92Trigger enableSimulationGlobal true;
 			// Complete task
 			//["itask3","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -110,13 +110,13 @@
 	{
 		case sideUnknown:
 		{
-			"[CCO] Hill 93 is contested" remoteExec ["systemChat"];
+			"[CCE] Hill 93 is contested" remoteExec ["systemChat"];
 		};
 		case WEST:
 		{
 			if ((SNeaville getVariable "owner") isEqualTo sideUnknown && (SDurandiere getVariable "owner") isEqualTo INDEPENDENT) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			NeavilleTrigger enableSimulationGlobal false;
-			"[CCO] Hill 93 captured by Germany" remoteExec ["systemChat"];
+			"[CCE] Hill 93 captured by Germany" remoteExec ["systemChat"];
 			DuraTrigger enableSimulationGlobal true;
 			// Complete task
 			//["wtask4","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -127,7 +127,7 @@
 		{
 			if ((SDurandiere getVariable "owner") isEqualTo sideUnknown && (SNeaville getVariable "owner") isEqualTo WEST) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			DuraTrigger enableSimulationGlobal false;
-			"[CCO] Hill 93 captured by America" remoteExec ["systemChat"];
+			"[CCE] Hill 93 captured by Great Britain" remoteExec ["systemChat"];
 			NeavilleTrigger enableSimulationGlobal true;
 			// Complete task
 			//["itask2","SUCCEEDED"] call BIS_fnc_taskSetState;
@@ -145,14 +145,14 @@
 	{
 		case sideUnknown:
 		{
-			"[CCO] Durandiere is contested" remoteExec ["systemChat"];
+			"[CCE] Durandiere is contested" remoteExec ["systemChat"];
 			germanyControlsAllSectors = false;
 		};
 		case WEST:
 		{
 			if ((SHill93 getVariable "owner") isNotEqualTo WEST) exitWith {[_sector,_ownerold] spawn CCO_fnc_resetSector};
 			Hill93Trigger enableSimulationGlobal false;
-			"[CCO] Durandiere captured by Germany" remoteExec ["systemChat"];
+			"[CCE] Durandiere captured by Germany" remoteExec ["systemChat"];
 			// Complete task
 			//["wtask5","SUCCEEDED"] call BIS_fnc_taskSetState;
 			// Hold for completion
@@ -164,7 +164,7 @@
 		case INDEPENDENT:
 		{
 			Hill93Trigger enableSimulationGlobal true;
-			"[CCO] Durandiere captured by America" remoteExec ["systemChat"];
+			"[CCE] Durandiere captured by Great Britain" remoteExec ["systemChat"];
 			// Complete task
 			//["itask1","SUCCEEDED"] call BIS_fnc_taskSetState;
 			// new task
