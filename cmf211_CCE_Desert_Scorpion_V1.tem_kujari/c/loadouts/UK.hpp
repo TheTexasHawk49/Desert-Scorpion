@@ -11,22 +11,22 @@
 #define CAMO_HEADGEAR "H_LIB_UK_Helmet_Mk2_Desert_Bowed"
 // Rifle
 #define RIFLE "CSA38_No4"
-#define RIFLE_MAG "CSA38_7_7_10x56R:15"
+#define RIFLE_MAG "CSA38_7_7_10x56R:5"
 #define RIFLE_ATTACHMENTS ""
 #define AR_ATTACHMENTS RIFLE_ATTACHMENTS, ""
 #define ALT_OPTICS ""
 // GL Rifle
 #define GLRIFLE "LIB_LeeEnfield_No4_CUP"
-#define GLRIFLE_MAG "LIB_10Rnd_770x56:7"
+#define GLRIFLE_MAG "LIB_10Rnd_770x56:5"
 #define GLRIFLE_MAG_FLARE ""
 #define GLRIFLE_MAG_SMOKE ""
 #define GLRIFLE_MAG_HE "LIB_1Rnd_G_MillsBomb:10"
 // Carbine
 #define CARBINE "CSA38_stenMkIII"
-#define CARBINE_MAG "csa38_32_9x19:6"
+#define CARBINE_MAG "csa38_32_9x19:10"
 // AR
 #define AR "CSA38_BRENMKII"
-#define AR_MAG "CSA38_7_7_30x56R:12"
+#define AR_MAG "CSA38_7_7_30x56R:16"
 // AT
 #define AT "LIB_PIAT"
 #define AT_MAG "LIB_1Rnd_89m_PIAT:1"
@@ -161,7 +161,7 @@ class ftl: rifleman {// FTL
 class sl: ftl {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
 };
 class plt: sl {// Platoon Leader
 headgear[] = {fow_h_uk_bp_beret};
@@ -253,7 +253,7 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
   backpack[] = {fow_b_uk_p37_radio};
   items[] += {RADIO_LR,RADIO_MR};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG}
+  magazines[] = {GLRIFLE_MAG};
 };
 
  class sf_sm: sf_rifleman {//Medic Special Forces 
@@ -265,7 +265,7 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
 
 //Weapons Teams
 class Fic_Spotter: rifleman { //Base Spotter
-  linkedItems[] += {RANGE_FINDER};
+  linkedItems[] += {BINOS};
 };
 
 //MMG

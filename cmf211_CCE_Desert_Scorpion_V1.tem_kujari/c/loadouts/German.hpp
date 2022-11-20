@@ -10,7 +10,7 @@
 #define CAMO_HEADGEAR "H_LIB_DAK_Helmet_net","H_LIB_DAK_Helmet_ns","H_LIB_DAK_Helmet_net_2","H_LIB_DAK_Helmet_ns_2","H_LIB_DAK_Helmet_2"
 // Rifle
 #define RIFLE "CSA38_kar98k"
-#define RIFLE_MAG "CSA38_7_92_5xMauser:60"
+#define RIFLE_MAG "CSA38_7_92_5xMauser:10"
 #define RIFLE_ATTACHMENTS ""
 #define AR_ATTACHMENTS RIFLE_ATTACHMENTS, ""
 #define ALT_OPTICS ""
@@ -23,16 +23,16 @@
 #define GLRIFLE_MAG_HE ""
 // Carbine
 #define CARBINE "fow_w_g43"
-#define CARBINE_MAG "fow_10nd_792x57:30"
+#define CARBINE_MAG "fow_10nd_792x57:10"
 // AR
 #define AR "fow_w_mg34"
-#define AR_MAG "fow_50Rnd_792x57:10"
+#define AR_MAG "fow_50Rnd_792x57:5"
 // AT
 #define AT "fow_w_pzfaust_60"
 #define AT_MAG "fow_1Rnd_pzfaust_60:1"
 // MMG
 #define MMG "fow_w_mg42"
-#define MMG_MAG "fow_50Rnd_792x57:10"
+#define MMG_MAG "fow_50Rnd_792x57:2"
 #define MMG_ATT ""
 // MAT
 #define MAT "LIB_RPzB"
@@ -158,7 +158,7 @@ class ftl: rifleman {// FTL
 class sl: ftl {// SL
   handguns[] = {PISTOL};
   magazines[] += {PISTOL_MAG};
-  linkedItems[] = {LINKED,LEADER_LINKED,RANGE_FINDER};
+  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
 };
 class plt: sl {// Platoon Leader
   uniform[] = {"U_LIB_DAK_Lieutenant"};
@@ -175,7 +175,8 @@ class xo: coy {// XO
 class sgt: plt {// Platoon Sergeant
 };
 class fac: plt {// RTO
-  magazines[] = {GLRIFLE_MAG,SIDE_FAC_GRENADES,PISTOL_MAG};
+  weapons[] = {CARBINE};
+  magazines[] = {CARBINE_MAG,SIDE_FAC_GRENADES,PISTOL_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED};
   headgear[] = {"H_LIB_DAK_Cap"};
   goggles[] = {"G_LIB_GER_Headset"};
@@ -222,7 +223,7 @@ class rifleman_02: rifleman {// Grenadier
 
 //Weapons Teams
 class Fic_Spotter: rifleman { //Base Spotter
-  linkedItems[] += {RANGE_FINDER};
+  linkedItems[] += {BINOS};
 };
 
 //MMG
@@ -233,11 +234,11 @@ class mmgl: sl {// MMG Lead
 class mmgg: ar {// MMG Gunner
   weapons[] = {MMG};
   vest[] = {V_LIB_DAK_VestMG};
-  magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {MMG_MAG,MMG_MAG,PISTOL_MAG,BASE_GRENADES};
   attachments[] = {};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
-  backpackItems[] += {MMG_MAG};
+  backpackItems[] += {MMG_MAG,MMG_MAG,MMG_MAG};
   vest[] = {V_LIB_DAK_VestMG};
 };
 
@@ -255,7 +256,7 @@ class matg: Fic_Soldier_Carbine {// MAT Gunner
 };
 class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
   backpack[] = {B_LIB_GER_Panzer_Empty};
-  magazines[] += {MAT_MAG};
+  magazines[] += {MAT_MAG,};
   items[] += {BASE_MEDICAL};
 };
 
