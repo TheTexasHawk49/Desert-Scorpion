@@ -1,19 +1,22 @@
-class CCO 
+class CCE
 {
 	class reinforcements
 	{
+		file = "functions\reinforcements";
 		class forceBLU{};
-		class forceOPF{};
+		class forceIND{};
 	};
 	class gamemode
 	{
+		file = "functions\gamemode";
 		class resetSector{};
 		class setupSectors{};
 		class germanVictoryCountdown{};
-		class americanVictoryCountdown{};
+		class britishVictoryCountdown{};
 	};
 	class JST
 	{
+		file = "functions\JST";
 		class respawnVehicles{};
 		class saveLoadMarkers{};
 		class serviceVehicles{};
