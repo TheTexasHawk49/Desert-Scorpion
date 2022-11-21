@@ -21,7 +21,6 @@ class CCE
 		class saveLoadMarkers{};
 		class serviceVehicles{};
 	}
-	class CfgFunctions
-	{
-		#include "KPCF\KPCF_functions.hpp" };
 };
+
+#include "KPCF\KPCF_functions.hpp"

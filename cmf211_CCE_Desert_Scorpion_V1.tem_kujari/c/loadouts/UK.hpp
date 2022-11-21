@@ -253,7 +253,7 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
   backpack[] = {fow_b_uk_p37_radio};
   items[] += {RADIO_LR,RADIO_MR};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG}
+  magazines[] = {GLRIFLE_MAG};
 };
 
  class sf_sm: sf_rifleman {//Medic Special Forces 
