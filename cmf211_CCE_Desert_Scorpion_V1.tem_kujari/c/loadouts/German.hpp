@@ -374,18 +374,22 @@ class cc: helicrew {// Crew Chief
 class vicc: Fic_Soldier_Carbine {// Crew
   uniform[] = {"U_LIB_DAK_Spg_crew_private"};
   headgear[] = {"H_LIB_DAK_Helmet_Glasses"};
-  magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR,RADIO_MR};
+  weapons[] = {PISTOL};	
+  magazines[] = {PISTOL_MAG,CREW_GRENADES};
+  backpackItems[] = {SIDE_KEY};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
 };
 class vicd: vicc {// Repair Specialist
   headgear[] = {"H_LIB_DAK_Helmet_Glasses"};
-  backpackItems[] = {"Toolkit",RADIO_MR,SIDE_KEY};
+  backpackItems[] = {"Toolkit",SIDE_KEY};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class vicl: vicc {// Vehicle Commander
   headgear[] = {"H_LIB_GER_TankOfficerCap2"};
+  weapons[] = {GL_RIFLE};	
+  magazines[] = {GL_MAG};	
+  backpackItems[] = {SIDE_KEY,RADIO_LR};
 };
 
 
