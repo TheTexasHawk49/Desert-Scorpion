@@ -3,7 +3,7 @@
 // RADIOS
 #define RADIO_SR "ACRE_PRC343"
 #define RADIO_MR "ACRE_PRC148"
-#define RADIO_LR "ACRE_PRC117F"
+#define RADIO_LR "ACRE_PRC77"
 
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:2","ACE_packingBandage:2","ACE_tourniquet"
