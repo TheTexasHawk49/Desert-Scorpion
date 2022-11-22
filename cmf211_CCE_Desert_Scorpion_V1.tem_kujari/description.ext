@@ -4,12 +4,15 @@ class MissionSQM
 	#include "mission.sqm"
 };
 
-#include "KPGUI\KPGUI_defines.hpp"
-#include "KPCF\ui\KPCF_dialog.hpp"
 
 class CfgFunctions {
 	#include "CfgFunctions.hpp"
+	#include "KP\KPCF\functions.hpp"
 };
+
+#include "KP\KPGUI\KPGUI_defines.hpp"
+#include "KP\KPCF\ui\defines.hpp"
+#include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
 
 
 // Misc settings
@@ -35,3 +38,4 @@ class CfgDebriefingSections {
 		variable = "acex_killTracker_outputText";
 	};
 };
+
