@@ -410,12 +410,14 @@ class cc: helicrew {// Crew Chief
 
 //Armor
 class vicc: Fic_Soldier_Carbine {// Crew
-  uniform[] = {fow_u_uk_bd40_seac_02_private};
-  magazines[] = {CARBINE_MAG,CREW_GRENADES};
-  backpackItems[] = {SIDE_KEY,RADIO_LR,RADIO_MR};
+  uniform[] = {"fow_u_uk_bd40_seac_02_private"};
+  headgear[] = {"fow_h_uk_beret_rtr"};
+  weapons[] = {PISTOL};
+  magazines[] = {PISTOL_MAG,CREW_GRENADES};
+  backpackItems[] = {SIDE_KEY};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
-  headgear[] = {fow_h_uk_beret_rtr};
+  
 };
 class vicd: vicc {// Repair Specialist
   backpackItems[] = {"Toolkit",SIDE_KEY};
@@ -424,6 +426,9 @@ class vicd: vicc {// Repair Specialist
 };
 class vicl: vicc {// Vehicle Commander
 headgear[] = {fow_h_uk_beret_rtr_headset};
+backpackItems[] = {RADIO_LR};
+weapons[] = {CARBINE};
+magazines[] = {CARBINE_MAG};
 };
 
 
