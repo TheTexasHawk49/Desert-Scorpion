@@ -387,8 +387,8 @@ class vicd: vicc {// Repair Specialist
 };
 class vicl: vicc {// Vehicle Commander
   headgear[] = {"H_LIB_GER_TankOfficerCap2"};
-  weapons[] = {GL_RIFLE};	
-  magazines[] = {GL_MAG};	
+  weapons[] = {GLRIFLE};	
+  magazines[] = {GLRIFLE_MAG};	
   backpackItems[] = {SIDE_KEY,RADIO_LR};
 };
 
