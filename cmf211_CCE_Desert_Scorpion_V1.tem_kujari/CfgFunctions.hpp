@@ -22,5 +22,3 @@ class CCE
 		class serviceVehicles{};
 	}
 };
-
-#include "KPCF\KPCF_functions.hpp"
