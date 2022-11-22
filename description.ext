@@ -39,3 +39,14 @@ class CfgDebriefingSections {
 	};
 };
 
+//Adds KP Cratefiller
+class CfgFunctions {
+    #include "CfgFunctions.hpp"
+    class KP {
+        #include "KP\KPCF\functions.hpp"
+    };
+};
+#include "KP\KPGUI\KPGUI_defines.hpp"
+
+#include "KP\KPCF\ui\defines.hpp"
+#include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
