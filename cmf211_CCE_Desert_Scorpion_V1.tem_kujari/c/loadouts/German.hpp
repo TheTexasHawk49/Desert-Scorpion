@@ -167,6 +167,7 @@ class plt: sl {// Platoon Leader
 class coy: plt {// CO
   uniform[] = {"U_LIB_DAK_Lieutenant"};
   headgear[] = {"fow_h_ger_officer_cap"};
+  items[] += {RADIO_LR};
 };
 class xo: coy {// XO
  uniform[] = {"U_LIB_DAK_Lieutenant"};
@@ -182,10 +183,9 @@ class fac: plt {// RTO
   goggles[] = {"G_LIB_GER_Headset"};
   uniform[] = {CAMO_UNIFORM};
   backpack[] = {"B_LIB_GER_Radio_ACRE2"};
-  items[] += {RADIO_LR,RADIO_MR};
+  items[] += {RADIO_LR};
 };
 class uav: fac { //FO
-items[] += {RADIO_LR};
 };
 
 //Medics
