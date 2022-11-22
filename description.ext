@@ -5,16 +5,6 @@ class MissionSQM
 };
 
 
-class CfgFunctions {
-	#include "CfgFunctions.hpp"
-	#include "KP\KPCF\functions.hpp"
-};
-
-#include "KP\KPGUI\KPGUI_defines.hpp"
-#include "KP\KPCF\ui\defines.hpp"
-#include "KP\KPCF\ui\KP_cratefiller_dialog.hpp"
-
-
 // Misc settings
 disableChannels[] = {0,2,4,5,6};
 cmfDate = "22JAN2022";
@@ -39,3 +29,9 @@ class CfgDebriefingSections {
 	};
 };
 
+class CfgFunctions {
+    #include "CfgFunctions.hpp"
+    class KP {
+        #include "KP\KPCF\functions.hpp"
+    };
+};
