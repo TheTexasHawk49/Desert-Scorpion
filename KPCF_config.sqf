@@ -72,7 +72,7 @@ KPCF_explosives = [
 KPCF_items = [
     "ToolKit"
 	,"ACE_MapTools","ACE_Flashlight_XL50","Binocular","ACE_ArtilleryTable"
-	,"ACE_elasticBandage","ACE_packingBandage","ACE_tourniquet","ACE_epinephrine","ACE_salineIV_500","ACE_morphine","ACE_Splint","ACE_bloodIV_500"
+	,"ACE_elasticBandage","ACE_packingBandage","ACE_tourniquet","ACE_epinephrine","ACE_salineIV_500","ACE_morphine","ACE_Splint","ACE_bloodIV_500","LIB_1Rnd_G_MillsBomb"
 ];
 
 // Defines the available backpacks
