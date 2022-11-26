@@ -193,6 +193,7 @@ class sm: Fic_Soldier_Carbine {// Medic
   uniform[] = {U_LIB_DAK_Medic};
   headgear[] = {H_LIB_GER_Helmet_Medic};
   magazines[] = {CARBINE_MAG,"LIB_NB39:4"};
+  backpack[] = {B_Battle_Belt_XL_F};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class plm: sm {// Platoon Medic

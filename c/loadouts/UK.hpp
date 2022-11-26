@@ -190,7 +190,7 @@ class uav: fac { //FO
 //Medics
 class sm: Fic_Soldier_Carbine {// Medic
   magazines[] = {"LIB_US_M18:4"};
-  backpack[] = {"B_Battle_Belt_XL_F"}
+  backpack[] = {"B_Battle_Belt_XL_F"};
   backpackItems[] = {MEDIC_MEDICAL};
   headgear[] = {Headgear_csa38_CZMKIIMED};
 };
