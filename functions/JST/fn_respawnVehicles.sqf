@@ -390,7 +390,10 @@ if (true) then
 		{
 			{
 				private _veh = _x;
-				// if crewed, skip and reset var
+				// if not a respawn vehicle, skip
+				private _vehArray = _veh getVariable ["CCE_vehArray", 0];
+				if (_vehArray isEqualTo 0) then {continue};
+				// if crewed, reset and skip
 				private _cnt = 0;
 				{
 					if (alive _x) then {_cnt = _cnt + 1};
@@ -400,14 +403,33 @@ if (true) then
 					_veh setVariable ["CCE_idleChecker", 0];
 					continue
 				};
-				// if not a respawn vehicle, skip
-				private _vehArray = _veh getVariable ["CCE_vehArray", 0];
-				if (_vehArray isEqualTo 0) then {continue};
-				// if near original spawn point, skip
+				// if near original spawn point, reset and skip
 				private _pos = getPos _veh;
 				private _spawnPos = _vehArray select 3;
-				if ((_pos distance2D _spawnPos) < 20) then {continue};
-				// handle empty respawn vehicles not near their spawn point
+				if ((_pos distance2D _spawnPos) < 20) then
+				{
+					_veh setVariable ["CCE_idleChecker", 0];
+					continue
+				};
+				// if within X meters of a friendly player, reset and skip
+				private _sideLocInfo = _unitVar getVariable ["sideLocInfo", [[_configSide],"MAIN"]];
+				private _friendlyNearby = false;
+				{
+					private _vehSide = _x;
+					{
+						private _player = _x;
+						if (((side _player) isEqualTo _vehSide) and ((_pos distance2D _player) < 200)) then
+						{
+							_friendlyNearby = true;
+						};
+					} forEach allPlayers;
+				} forEach (_sideLocInfo select 0);
+				if (_friendlyNearby) then
+				{
+					_veh setVariable ["CCE_idleChecker", 0];
+					continue
+				};
+				// handle abandoned and empty respawn vehicles that are not near their spawn point
 				private _idleChecker = _veh getVariable ["CCE_idleChecker", 0];
 				switch true do
 				{
