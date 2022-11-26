@@ -8,7 +8,7 @@ class EditorData
 	toggles=545;
 	class ItemIDProvider
 	{
-		nextID=11468;
+		nextID=11474;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=781;
+		nextID=803;
 	};
 	class Camera
 	{
-		pos[]={9290.9473,114.00019,16080.075};
-		dir[]={0.60475945,-0.68540645,-0.40560949};
-		up[]={0.56924981,0.72814173,-0.38179389};
-		aside[]={-0.55702269,-2.9228977e-007,-0.83051473};
+		pos[]={4826.6372,20.431229,2801.1384};
+		dir[]={-0.25816521,-0.45504314,-0.85225803};
+		up[]={-0.13192549,0.89045578,-0.43551144};
+		aside[]={-0.95708072,-7.3714182e-007,0.28991646};
 	};
 };
 binarizationWanted=0;
-sourceName="cmf211_CCE_Desert_Scorpion_V5";
+sourceName="cmf221_Desert_Scorpion_v8";
 addons[]=
 {
 	"A3_Characters_F",
@@ -978,18 +978,6 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					singleType="ARRAY";
-				};
-			};
-		};
-		class Attribute1
-		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -998,6 +986,18 @@ class CustomAttributes
 				{
 					singleType="SCALAR";
 					value=1;
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					singleType="ARRAY";
 				};
 			};
 		};
@@ -15342,6 +15342,7 @@ class Mission
 					};
 					id=11318;
 					type="potato_w_plm";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15393,7 +15394,6 @@ class Mission
 					};
 					id=11319;
 					type="potato_w_fac";
-					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16126,6 +16126,7 @@ class Mission
 					};
 					id=11333;
 					type="potato_w_rifleman";
+					atlOffset=-2.6702881e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18784,7 +18785,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9517.957,9.8214388,16039.139};
-						angles[]={-0,3.8565779,0};
+						angles[]={0,3.8565779,0};
 					};
 					side="West";
 					flags=6;
@@ -18882,7 +18883,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9524.4111,9.9117899,16039.246};
-						angles[]={-0,3.8565538,0.024993783};
+						angles[]={0,3.8565538,0.024993783};
 					};
 					side="West";
 					flags=4;
@@ -19028,7 +19029,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={9521.3389,9.8482161,16036.207};
-						angles[]={-0,3.8564632,0.019999012};
+						angles[]={0,3.8564632,0.019999012};
 					};
 					side="West";
 					flags=4;
@@ -19290,7 +19291,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4608.3403,15.487616,2806.2795};
-						angles[]={-0,1.5727684,6.2132993};
+						angles[]={0,1.5727684,6.2132993};
 					};
 					side="Independent";
 					flags=6;
@@ -19379,7 +19380,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4606.6982,15.622088,2811.2815};
-						angles[]={-0,1.5727686,6.1983895};
+						angles[]={0,1.5727686,6.1983895};
 					};
 					side="Independent";
 					flags=4;
@@ -19440,6 +19441,7 @@ class Mission
 					};
 					id=11394;
 					type="potato_i_uav";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19521,7 +19523,6 @@ class Mission
 					};
 					id=11396;
 					type="potato_i_sl";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19560,6 +19561,7 @@ class Mission
 					};
 					id=11397;
 					type="potato_i_sm";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20098,6 +20100,7 @@ class Mission
 					};
 					id=11404;
 					type="potato_i_ftl";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20135,6 +20138,7 @@ class Mission
 					};
 					id=11405;
 					type="potato_i_ar";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20224,6 +20228,7 @@ class Mission
 					};
 					id=11406;
 					type="potato_i_aar";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20313,6 +20318,7 @@ class Mission
 					};
 					id=11407;
 					type="potato_i_lat";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20484,6 +20490,7 @@ class Mission
 					};
 					id=11408;
 					type="potato_i_rifleman_02";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20533,7 +20540,6 @@ class Mission
 			{
 			};
 			id=11395;
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22736,6 +22742,7 @@ class Mission
 					};
 					id=11456;
 					type="potato_i_mtrl";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22772,6 +22779,7 @@ class Mission
 					};
 					id=11457;
 					type="potato_i_mtrg";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22807,7 +22815,6 @@ class Mission
 					};
 					id=11458;
 					type="potato_i_mtrag";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22844,6 +22851,7 @@ class Mission
 					};
 					id=11459;
 					type="potato_i_mtrg";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22879,6 +22887,7 @@ class Mission
 					};
 					id=11460;
 					type="potato_i_mtrag";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22915,7 +22924,7 @@ class Mission
 					};
 					id=11461;
 					type="potato_i_mtrg";
-					atlOffset=-9.5367432e-007;
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22951,7 +22960,7 @@ class Mission
 					};
 					id=11462;
 					type="potato_i_mtrag";
-					atlOffset=-9.5367432e-007;
+					atlOffset=-1.9073486e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -22975,6 +22984,7 @@ class Mission
 			{
 			};
 			id=11455;
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23018,19 +23028,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4823.9795,10.410548,2782.792};
+						position[]={4826.73,10.225065,2784.365};
 						angles[]={0,3.4033921,0};
 					};
 					side="Independent";
-					flags=7;
+					flags=4;
 					class Attributes
 					{
-						description="Lead@MASH";
+						description="Driver";
 						isPlayable=1;
 					};
-					id=11464;
+					id=11470;
 					type="potato_i_eng";
-					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23054,19 +23063,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4826.7305,10.225037,2784.3655};
+						position[]={4829.9341,10.029779,2786.0081};
 						angles[]={0,3.4033921,0};
 					};
 					side="Independent";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Driver";
 						isPlayable=1;
 					};
-					id=11465;
-					type="potato_i_engl";
-					atlOffset=-9.5367432e-007;
+					id=11471;
+					type="potato_i_eng";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23090,19 +23098,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4822.791,10.576975,2786.22};
+						position[]={4823.979,10.410604,2782.792};
 						angles[]={0,3.4033921,0};
 					};
 					side="Independent";
-					flags=5;
+					flags=6;
 					class Attributes
 					{
-						description="Driver";
+						description="Lead@MASH";
 						isPlayable=1;
 					};
-					id=11466;
+					id=11472;
 					type="potato_i_engl";
-					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23126,19 +23133,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4829.9336,10.029803,2786.0078};
+						position[]={4822.791,10.576976,2786.22};
 						angles[]={0,3.4033921,0};
 					};
 					side="Independent";
-					flags=5;
+					flags=4;
 					class Attributes
 					{
 						description="Driver";
 						isPlayable=1;
 					};
-					id=11467;
-					type="potato_i_engl";
-					atlOffset=-9.5367432e-007;
+					id=11473;
+					type="potato_i_eng";
 					class CustomAttributes
 					{
 						class Attribute0
@@ -23162,7 +23168,6 @@ class Mission
 			{
 			};
 			id=11463;
-			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
