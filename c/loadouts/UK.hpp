@@ -257,6 +257,7 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
 
  class sf_sm: sf_rifleman {//Medic Special Forces
   magazines[] = {"LIB_F1:2","LIB_US_M18:2"};
+  backpack[] = {"B_Battle_Belt_XL_F"};
   backpackItems[] = {MEDIC_MEDICAL,MEDIC_GRENADES};
 }; 
  
@@ -459,6 +460,7 @@ class eng: fic_eng {// Logistics Engineer
 class engl: eng {// Logistics Leader
   weapons[] = {GLRIFLE};
   magazines[] = {GLRIFLE_MAG};
+  backpack[] = {"B_Battle_Belt_XL_F"};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
   backpackItems[] += {RADIO_LR};
