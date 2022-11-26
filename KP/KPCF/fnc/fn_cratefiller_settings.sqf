@@ -38,7 +38,7 @@
     "CHECKBOX",
     [localize "STR_KP_CRATEFILLER_GENERATEPRESET", localize "STR_KP_CRATEFILLER_GENERATEPRESET_TT"],
     localize "STR_KP_CRATEFILLER_SETTINGS",
-    true,
+    false,
     1,
     {[] call KP_fnc_cratefiller_presets;}
 ] call CBA_Settings_fnc_init;
@@ -51,7 +51,7 @@
     "EDITBOX",
     [localize "STR_KP_CRATEFILLER_BUILDINGS", localize "STR_KP_CRATEFILLER_BUILDINGS_TT"],
     localize "STR_KP_CRATEFILLER_SETTINGS",
-    "[""Land_Cargo20_orange_F"", ""Land_RepairDepot_01_green_F"", ""Land_RepairDepot_01_civ_F""]",
+    "[""Land_Cargo20_orange_F""]",
     1,
     {}
 ] call CBA_Settings_fnc_init;
