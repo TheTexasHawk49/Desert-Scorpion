@@ -86,7 +86,7 @@
 // Ammo Truck
 class rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy {
 	TransportWeapons[] = {AT,AT,AT};
-	TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,CARBINE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,AR_MAG,AR_MAG,AR_MAG,AR_MAG,MMG_MAG,MMG_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,GLRIFLE_MAG_SMOKE,MAT_MAG,BASE_GRENADES,BASE_GRENADES,BASE_GRENADES,BASE_GRENADES};
+	TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,CARBINE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,AR_MAG,AR_MAG,AR_MAG,AR_MAG,MMG_MAG,MMG_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,GLRIFLE_MAG_SMOKE,MAT_MAG,"LIB_Shg24:2","LIB_Shg24:2","LIB_Shg24:2","LIB_Shg24:2"};
 	TransportItems[] = {TOOLKIT};
 };
 
@@ -134,7 +134,7 @@ class rifleman {// rifleman
   backpack[] = {CAMO_BACKPACK};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,BASE_GRENADES};
+  magazines[] = {RIFLE_MAG,"LIB_Shg24:2","LIB_NB39:2"};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
@@ -144,7 +144,7 @@ class rifleman {// rifleman
 };
 class Fic_Soldier_Carbine: rifleman {// carbine-man
   weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,BASE_GRENADES};
+  magazines[] = {CARBINE_MAG,"LIB_Shg24:2","LIB_NB39:2"};
 };
 
 
@@ -204,7 +204,7 @@ class cm: plm {// Company Medic
 //Infantry
 class ar: rifleman {// AR
   weapons[] = {AR};
-  magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {AR_MAG,PISTOL_MAG,"LIB_Shg24:2","LIB_NB39:2"};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
@@ -217,7 +217,7 @@ class lat: Fic_Soldier_Carbine {// RAT
 };
 class rifleman_02: rifleman {// Grenadier
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,BASE_GRENADES};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,"LIB_Shg24:2","LIB_NB39:2"};
 };
 
 
@@ -234,7 +234,7 @@ class mmgl: sl {// MMG Lead
 class mmgg: ar {// MMG Gunner
   weapons[] = {MMG};
   vest[] = {V_LIB_DAK_VestMG};
-  magazines[] = {MMG_MAG,MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {MMG_MAG,MMG_MAG,PISTOL_MAG,"LIB_Shg24:2","LIB_NB39:2"};
   attachments[] = {};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
@@ -336,14 +336,14 @@ class artg: rifleman {// Artillery Gunner
 //Sniper Team
 class spotter: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
-  magazines[] = {SPOTTER_MAG,BASE_GRENADES};
+  magazines[] = {SPOTTER_MAG,"LIB_Shg24:2","LIB_NB39:2"};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper: spotter {// Sniper
   weapons[] = {SNIPER};
-  magazines[] = {SNIPER_MAG,BASE_GRENADES};
+  magazines[] = {SNIPER_MAG,"LIB_Shg24:2","LIB_NB39:2"};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED};
   attachments[] = {SNIPER_ATTACHMENTS};

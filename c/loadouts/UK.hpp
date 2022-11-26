@@ -76,7 +76,7 @@
 #define PISTOL "LIB_Webley_mk6"
 #define PISTOL_MAG "LIB_6Rnd_455:3"
 // Grenades
-#define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
+#define LEADER_GRENADES "LIB_F1",LEADER_SMOKES
 // Gear
 #define TOOLS BASE_TOOLS
 #define LEADER_TOOLS BASE_LEADER_TOOLS,SIDE_KEY
@@ -89,7 +89,7 @@
 // Ammo Truck
 class rhsgref_ins_g_gaz66 {
 	TransportWeapons[] = {AT,AT,AT};
-	TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,CARBINE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,AR_MAG,AR_MAG,AR_MAG,AR_MAG,MMG_MAG,MMG_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,GLRIFLE_MAG_SMOKE,MAT_MAG,BASE_GRENADES,BASE_GRENADES,BASE_GRENADES,BASE_GRENADES};
+	TransportMagazines[] = {RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,RIFLE_MAG,CARBINE_MAG,CARBINE_MAG,GLRIFLE_MAG,GLRIFLE_MAG,AR_MAG,AR_MAG,AR_MAG,AR_MAG,MMG_MAG,MMG_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,GLRIFLE_MAG_SMOKE,MAT_MAG,"LIB_F1:2","LIB_US_M18:2","LIB_F1:2","LIB_US_M18:2","LIB_F1:2","LIB_US_M18:2","LIB_F1:2","LIB_US_M18:2"};
 	TransportItems[] = {TOOLKIT};
 };
 
@@ -137,7 +137,7 @@ class rifleman {// rifleman
   backpack[] = {CAMO_BACKPACK};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,BASE_GRENADES};
+  magazines[] = {RIFLE_MAG,"LIB_F1:2","LIB_US_M18:2"};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
   attachments[] = {RIFLE_ATTACHMENTS};
@@ -147,7 +147,7 @@ class rifleman {// rifleman
 };
 class Fic_Soldier_Carbine: rifleman {// carbine-man
   weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,BASE_GRENADES};
+  magazines[] = {CARBINE_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 
 
@@ -178,7 +178,7 @@ class sgt: plt {// Platoon Sergeant
 };
 class fac: coy {// RTO
   weapons[] = {RIFLE};
-  magazines[] = {PISTOL_MAG,RIFLE_MAG,BASE_GRENADES};
+  magazines[] = {PISTOL_MAG,RIFLE_MAG,"LIB_F1:2","LIB_US_M18:2"};
   linkedItems[] = {LINKED,LEADER_LINKED};
   facewear[] = {G_LIB_GER_Headset};
   backpack[] = {fow_b_uk_p37_radio};
@@ -204,7 +204,7 @@ class cm: plm {// Company Medic
 //Infantry
 class ar: rifleman {// AR
   weapons[] = {AR};
-  magazines[] = {AR_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {AR_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
   handguns[] = {PISTOL};
 };
 class aar: rifleman {// AAR
@@ -218,7 +218,7 @@ class lat: Fic_Soldier_Carbine {// RAT
 };
 class rifleman_02: rifleman {// Grenadier
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,BASE_GRENADES};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,"LIB_F1:2","LIB_US_M18:2"};
 };
 
 //Special Forces
@@ -229,7 +229,7 @@ class sf_rifleman {//Gren Special Forces
   backpack[] = {fow_b_uk_p37};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,BASE_GRENADES};
+  magazines[] = {GLRIFLE_MAG,"LIB_F1:2","LIB_US_M18:2"};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
 };
@@ -275,7 +275,7 @@ class mmgl: sl {// MMG Lead
 };
 class mmgg: ar {// MMG Gunner
   weapons[] = {MMG};
-  magazines[] = {MMG_MAG,PISTOL_MAG,BASE_GRENADES};
+  magazines[] = {MMG_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
   attachments[] = {};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
@@ -374,14 +374,14 @@ class artg: rifleman {// Artillery Gunner
 //Sniper Team
 class spotter: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
-  magazines[] = {SPOTTER_MAG,BASE_GRENADES};
+  magazines[] = {SPOTTER_MAG,"LIB_F1:2","LIB_US_M18:2"};
   items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
 class sniper: spotter {// Sniper
   weapons[] = {SNIPER};
-  magazines[] = {SNIPER_MAG,BASE_GRENADES};
+  magazines[] = {SNIPER_MAG,"LIB_F1:2","LIB_US_M18:2"};
   items[] = {TOOLS,"ACE_RangeCard"};
   linkedItems[] = {LINKED};
   attachments[] = {SNIPER_ATTACHMENTS};
