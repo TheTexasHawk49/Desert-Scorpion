@@ -90,7 +90,7 @@
     "EDITBOX",
     [localize "STR_KP_CRATEFILLER_ITEMS", localize "STR_KP_CRATEFILLER_ITEMS_TT"],
     localize "STR_KP_CRATEFILLER_SETTINGS",
-    "[""arifle_SPAR_01_snd_F"", ""MMG_01_tan_F"", ""HandGrenade"", ""MiniGrenade"", ""DemoCharge_Remote_Mag"", ""ATMine_Range_Mag"", ""FirstAidKit"", ""ToolKit"", ""B_FieldPack_cbr"", ""B_AssaultPack_cbr""]",
+    "[""fow_w_mp40"",""fow_w_g43"",""fow_w_mg42"",""CSA38_kar98k"",""LIB_P08"",""LIB_RPzB"",""fow_w_pzfaust_60"",""CSA38_No4"",""LIB_LeeEnfield_No4","""CSA38_stenMkIII"",""CSA38_BRENMKII"",""CSA38_stenMkVI"",""LIB_Webley_mk6"",""LIB_PIAT"",""ACE_elasticBandage"",""ACE_packingBandage"",""ACE_tourniquet"",""ACE_epinephrine"",""ACE_salineIV_500"",""ACE_morphine"",""ACE_Splint"",""ACE_bloodIV_500"",""LIB_US_TNT_4pound_mag"",""ACE_LIB_LadungPM"",""LIB_1Rnd_G_MillsBomb"",""LIB_F1"",""LIB_US_M18"",""LIB_Shg24"",""LIB_NB39"",""JST_105_he_mag"",""JST_105_illum_mag"",""JST_105_smoke_mag"",""ace_cswCompatCUP_105mm_m119_he""]",
     1,
     {}
 ] call CBA_Settings_fnc_init;
