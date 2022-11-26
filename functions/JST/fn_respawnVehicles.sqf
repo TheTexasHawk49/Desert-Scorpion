@@ -412,6 +412,7 @@ if (true) then
 					continue
 				};
 				// if within X meters of a friendly player, reset and skip
+				private _configSide = (getNumber (configfile >> "CfgVehicles" >> typeOf _veh >> "side"));
 				private _sideLocInfo = _unitVar getVariable ["sideLocInfo", [[_configSide],"MAIN"]];
 				private _friendlyNearby = false;
 				{
