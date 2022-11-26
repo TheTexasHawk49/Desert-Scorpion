@@ -256,9 +256,9 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
 };
 
  class sf_sm: sf_rifleman {//Medic Special Forces
-  magazines[] = {"LIB_F1:2","LIB_US_M18:2"};
+  magazines[] += {"LIB_F1:2","LIB_US_M18:2"};
   backpack[] = {"B_Battle_Belt_XL_F"};
-  backpackItems[] = {MEDIC_MEDICAL,MEDIC_GRENADES};
+  backpackItems[] += {MEDIC_MEDICAL,MEDIC_GRENADES};
 }; 
  
 
