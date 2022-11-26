@@ -12,7 +12,7 @@
 #define RIFLE "CSA38_kar98k"
 #define RIFLE_MAG "CSA38_7_92_5xMauser:10"
 #define RIFLE_ATTACHMENTS ""
-#define AR_ATTACHMENTS RIFLE_ATTACHMENTS, ""
+#define AR_ATTACHMENTS RIFLE_ATTACHMENTS ""
 #define ALT_OPTICS ""
 // GL Rifle
 #define GLRIFLE "fow_w_mp40"
@@ -22,8 +22,8 @@
 #define GLRIFLE_MAG_SMOKE ""
 #define GLRIFLE_MAG_HE ""
 // Carbine
-#define CARBINE "fow_w_g43"
-#define CARBINE_MAG "fow_10nd_792x57:10"
+#define CARBINE "LIB_G43"
+#define CARBINE_MAG "LIB_10Rnd_792x57:5"
 // AR
 #define AR "fow_w_mg34"
 #define AR_MAG "fow_50Rnd_792x57:5"
@@ -67,8 +67,8 @@
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS ""
 // SMG
-#define SMG CARBINE "
-#define SMG_MAG CARBINE_MAG "
+#define SMG CARBINE ""
+#define SMG_MAG CARBINE_MAG ""
 // Pistol
 #define PISTOL "LIB_P08"
 #define PISTOL_MAG "LIB_8Rnd_9x19_P08"
@@ -192,7 +192,7 @@ class uav: fac { //FO
 class sm: Fic_Soldier_Carbine {// Medic
   uniform[] = {U_LIB_DAK_Medic};
   headgear[] = {H_LIB_GER_Helmet_Medic};
-  magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
+  magazines[] = {CARBINE_MAG,"LIB_NB39:4"};
   backpackItems[] = {MEDIC_MEDICAL};
 };
 class plm: sm {// Platoon Medic
@@ -235,7 +235,6 @@ class mmgg: ar {// MMG Gunner
   weapons[] = {MMG};
   vest[] = {V_LIB_DAK_VestMG};
   magazines[] = {MMG_MAG,MMG_MAG,PISTOL_MAG,"LIB_Shg24:2","LIB_NB39:2"};
-  attachments[] = {};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   backpackItems[] += {MMG_MAG,MMG_MAG,MMG_MAG};
@@ -252,11 +251,10 @@ class matg: Fic_Soldier_Carbine {// MAT Gunner
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
   launchers[] = {MAT};
-  secondaryAttachments[] = {MAT_OPTIC};
 };
 class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
   backpack[] = {B_LIB_GER_Panzer_Empty};
-  magazines[] += {MAT_MAG,};
+  magazines[] += {MAT_MAG,MAT_MAG,MAT_MAG,MAT_MAG,MAT_MAG};
   items[] += {BASE_MEDICAL};
 };
 
@@ -316,18 +314,19 @@ class msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
 //Mortar
 class mtrl: sl {// Mortar Lead
   items[] += {BASE_ARTILLERY};
+  backpackItems[] += {RADIO_LR};
 };
 class mtrg: Fic_Soldier_Carbine {// Mortar Gunner
-  MORTAR_GEAR("B_Mortar_01_weapon_F")
 };
 class mtrag: Fic_Spotter {// Assistant Mortar
-  MORTAR_GEAR("B_Mortar_01_support_F")
+items[] += {BASE_ARTILLERY};
 };
 
 //Artillery
 class artl: sl {// Artillery Leader
   backpack[] = {CARRYALL};
   backpackItems[] += {BASE_ARTILLERY};
+  
 };
 class artg: rifleman {// Artillery Gunner
   backpackItems[] += {BASE_ARTILLERY};
@@ -337,7 +336,7 @@ class artg: rifleman {// Artillery Gunner
 class spotter: Fic_Spotter {// Spotter
   weapons[] = {SPOTTER};
   magazines[] = {SPOTTER_MAG,"LIB_Shg24:2","LIB_NB39:2"};
-  items[] += {RADIO_MR,"ACE_ATragMX","ACE_Kestrel4500"};
+  items[] += {RADIO_LR};
   linkedItems[] += {LEADER_LINKED};
   attachments[] = {SPOTTER_ATTACHMENTS};
 };
@@ -375,7 +374,7 @@ class vicc: Fic_Soldier_Carbine {// Crew
   uniform[] = {"U_LIB_DAK_Spg_crew_private"};
   headgear[] = {"H_LIB_DAK_Helmet_Glasses"};
   weapons[] = {PISTOL};	
-  magazines[] = {PISTOL_MAG,CREW_GRENADES};
+  magazines[] = {PISTOL_MAG,"LIB_NB39:2"};
   backpackItems[] = {SIDE_KEY};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};

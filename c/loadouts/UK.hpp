@@ -10,8 +10,8 @@
 #define CAMO_BACKPACK "B_LIB_UK_HSack_Tea"
 #define CAMO_HEADGEAR "H_LIB_UK_Helmet_Mk2_Desert_Bowed"
 // Rifle
-#define RIFLE "CSA38_No4"
-#define RIFLE_MAG "CSA38_7_7_10x56R:5"
+#define RIFLE "LIB_LeeEnfield_No4_CUP"
+#define RIFLE_MAG "LIB_10Rnd_770x56:5"
 #define RIFLE_ATTACHMENTS ""
 #define AR_ATTACHMENTS RIFLE_ATTACHMENTS, ""
 #define ALT_OPTICS ""
@@ -146,15 +146,14 @@ class rifleman {// rifleman
   face[] = {F_MN};
 };
 class Fic_Soldier_Carbine: rifleman {// carbine-man
-  weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  magazines[] = {"LIB_F1:2","LIB_US_M18:2"};
 };
 
 
 //Leadership
 class ftl: rifleman {// FTL
   weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,LEADER_GRENADES};
+  magazines[] = {CARBINE_MAG,"LIB_F1:2","LIB_US_M18:2"};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
@@ -182,16 +181,15 @@ class fac: coy {// RTO
   linkedItems[] = {LINKED,LEADER_LINKED};
   facewear[] = {G_LIB_GER_Headset};
   backpack[] = {fow_b_uk_p37_radio};
-  items[] += {RADIO_LR,RADIO_MR};
+  items[] += {RADIO_LR};
 };
 class uav: fac { //FO
-items[] += {RADIO_LR};
 };
 
 
 //Medics
 class sm: Fic_Soldier_Carbine {// Medic
-  magazines[] = {CARBINE_MAG,MEDIC_GRENADES};
+  magazines[] = {CARBINE_MAG,"LIB_US_M18:4"};
   backpackItems[] = {MEDIC_MEDICAL};
   headgear[] = {Headgear_csa38_CZMKIIMED};
 };
@@ -213,7 +211,7 @@ class aar: rifleman {// AAR
 };
 class lat: Fic_Soldier_Carbine {// RAT
   weapons[] = {RIFLE};
-  magazines[] += {RIFLE_MAG,AT_MAG};
+  magazines[] += {RIFLE_MAG,AT_MAG,AT_MAG};
   launchers[] = {AT};
 };
 class rifleman_02: rifleman {// Grenadier
@@ -229,7 +227,7 @@ class sf_rifleman {//Gren Special Forces
   backpack[] = {fow_b_uk_p37};
   backpackItems[] = {BASE_MEDICAL};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,"LIB_F1:2","LIB_US_M18:2"};
   items[] = {TOOLS};
   linkedItems[] = {LINKED};
 };
@@ -237,13 +235,13 @@ class sf_rifleman {//Gren Special Forces
 class sf_lat: sf_rifleman {//LAT Special Forces 
   launchers[] = {AT};
   weapons[] = {SF_SMG};
-  magazines[] = {SF_SMG_MAG,AT_MAG,AT_MAG,AT_MAG};
+  magazines[] = {SF_SMG_MAG,AT_MAG,AT_MAG,AT_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 
 class sf_ftl: sf_rifleman {//FTL Special Forces 
   linkedItems[] = {LINKED,LEADER_LINKED};
   weapons[] = {SF_SMG};
-  magazines[] = {SF_SMG_MAG};
+  magazines[] = {SF_SMG_MAG,"LIB_F1:2","LIB_US_M18:2"};
 }; 
 
 class sf_sl: sf_ftl {//Squad Lead Special Forces  
@@ -251,12 +249,13 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
 
  class sf_rifleman_02: sf_rifleman {//RTO Special Forces 
   backpack[] = {fow_b_uk_p37_radio};
-  items[] += {RADIO_LR,RADIO_MR};
+  items[] += {RADIO_LR};
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG};
+  magazines[] = {GLRIFLE_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 
- class sf_sm: sf_rifleman {//Medic Special Forces 
+ class sf_sm: sf_rifleman {//Medic Special Forces
+  magazines[] = {"LIB_F1:2","LIB_US_M18:2"};
   backpackItems[] = {MEDIC_MEDICAL,MEDIC_GRENADES};
 }; 
  
@@ -354,12 +353,12 @@ class msamag: Fic_Spotter {// SAM Spotter/Ammo Bearer
 //Mortar
 class mtrl: sl {// Mortar Lead
   items[] += {BASE_ARTILLERY};
+  backpackItems[] += {RADIO_LR};
 };
 class mtrg: Fic_Soldier_Carbine {// Mortar Gunner
-  MORTAR_GEAR("B_Mortar_01_weapon_F")
 };
 class mtrag: Fic_Spotter {// Assistant Mortar
-  MORTAR_GEAR("B_Mortar_01_support_F")
+items[] += {BASE_ARTILLERY};
 };
 
 //Artillery
@@ -413,7 +412,7 @@ class vicc: Fic_Soldier_Carbine {// Crew
   uniform[] = {"fow_u_uk_bd40_seac_02_private"};
   headgear[] = {"fow_h_uk_beret_rtr"};
   weapons[] = {PISTOL};
-  magazines[] = {PISTOL_MAG,CREW_GRENADES};
+  magazines[] = {PISTOL_MAG,"LIB_US_M18:2"};
   backpackItems[] = {SIDE_KEY};
   linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   items[] += {BASE_MEDICAL};
@@ -434,7 +433,7 @@ magazines[] = {CARBINE_MAG};
 
 //Support Teams
 class Fic_eng: Fic_Soldier_Carbine { // Base ENG
-  magazines[] = {CARBINE_MAG,CREW_GRENADES};
+  magazines[] = {CARBINE_MAG};
   linkedItems[] = {LINKED,LEADER_LINKED};
   items[] += {BASE_ENG,BASE_MEDICAL};
   backpackItems[] = {};
@@ -458,9 +457,9 @@ class eng: fic_eng {// Logistics Engineer
 };
 class engl: eng {// Logistics Leader
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  magazines[] = {GLRIFLE_MAG};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
-  backpackItems[] += {RADIO_MR};
+  backpackItems[] += {RADIO_LR};
 };
 class fallback: rifleman {}; // This means any faction member who doesn't match something will use this loadout

@@ -7,25 +7,25 @@
 
 // GEAR
 #define BASE_MEDICAL "ACE_elasticBandage:2","ACE_packingBandage:2","ACE_tourniquet"
-#define MEDIC_MEDICAL "ACE_packingBandage:15","ACE_elasticBandage:15","ACE_epinephrine:12","ACE_salineIV_500:4","ACE_morphine:12","ACE_tourniquet:2","ACE_Splint:10","ACE_bodyBag:5"
+#define MEDIC_MEDICAL "ACE_packingBandage:15","ACE_elasticBandage:15","ACE_epinephrine:12","ACE_salineIV_500:4","ACE_morphine:12","ACE_tourniquet:2","ACE_Splint:10"
 #define BASE_TOOLS "ACE_MapTools","ACE_Flashlight_XL50","ACE_SpraypaintRed","ACE_CableTie:2"
-#define BASE_LEADER_TOOLS "ACE_personalAidKit","ACE_Fortify"
+#define BASE_LEADER_TOOLS 
 #define BASE_LINKED "ItemMap","ItemCompass","ItemWatch"
-#define BASE_LEADER_LINKED ""
-#define BASE_FRAG "HandGrenade:2"
-#define BASE_SMOKES "SmokeShell:2"
-#define BASE_GRENADES BASE_FRAG,BASE_SMOKES
-#define LEADER_SMOKES BASE_SMOKES,"SmokeShellGreen:2","SmokeShellPurple"
-#define MEDIC_GRENADES BASE_SMOKES,BASE_SMOKES,"SmokeShellPurple:2"
-#define CREW_GRENADES BASE_SMOKES,"SmokeShellGreen:2"
+#define BASE_LEADER_LINKED 
+#define BASE_FRAG 
+#define BASE_SMOKES 
+#define BASE_GRENADES BASE_FRAG,BASE_SMOKES 
+#define LEADER_SMOKES BASE_SMOKES 
+#define MEDIC_GRENADES BASE_SMOKES,BASE_SMOKES 
+#define CREW_GRENADES BASE_SMOKES 
 #define BASE_ENG "ACE_DefusalKit"
 #define BASE_EXP "DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2","ACE_Clacker"
 #define BASE_MINE "ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"
 #define MINE_DETECTOR "ACE_VMM3"
 #define BINOS "Binocular"
 #define RANGE_FINDER "Binocular"
-#define BASE_BALLISTICS "ACE_ATragMX","ACE_Kestrel4500"
-#define BASE_ARTILLERY "ACE_artilleryTable",BASE_BALLISTICS
+#define BASE_BALLISTICS 
+#define BASE_ARTILLERY "ACE_artilleryTable"
 #define VZ99 "potato_vz99_carryWeapon"
 #define VZ99HE "potato_vz99_HE:6"
 
