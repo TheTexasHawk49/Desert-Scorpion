@@ -318,9 +318,11 @@ class mtrl: sl {// Mortar Lead
   backpackItems[] += {RADIO_LR};
 };
 class mtrg: Fic_Soldier_Carbine {// Mortar Gunner
+  weapons[] = {RIFLE};
+  magazines[] = {RIFLE_MAG,"LIB_Shg24:2","LIB_NB39:2"};
 };
 class mtrag: Fic_Spotter {// Assistant Mortar
-items[] += {BASE_ARTILLERY};
+  items[] += {BASE_ARTILLERY};
 };
 
 //Artillery
