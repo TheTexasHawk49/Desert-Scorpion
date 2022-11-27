@@ -247,7 +247,7 @@ class matl: sl {// MAT Lead
   backpack[] = {B_LIB_GER_Backpack};
   magazines[] += {MAT_MAG};
 };
-class matg: Fic_Soldier_Carbine {// MAT Gunner
+class matg: rifleman {// MAT Gunner
   backpackItems[] = {};
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
