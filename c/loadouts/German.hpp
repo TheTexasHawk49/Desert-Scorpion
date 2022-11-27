@@ -212,7 +212,7 @@ class aar: rifleman {// AAR
   backpackItems[] += {AR_MAG};
   linkedItems[] += {BINOS};
 };
-class lat: Fic_Soldier_Carbine {// RAT
+class lat: rifleman {// RAT
   magazines[] += {AT_MAG};
   launchers[] = {AT};
 };
