@@ -71,7 +71,7 @@
 #define SMG_MAG CARBINE_MAG ""
 // Pistol
 #define PISTOL "LIB_P08"
-#define PISTOL_MAG "LIB_8Rnd_9x19_P08"
+#define PISTOL_MAG "LIB_8Rnd_9x19_P08:3"
 // Grenades
 #define LEADER_GRENADES BASE_FRAG,LEADER_SMOKES,SIDE_CHEM_LIGHT
 // Gear
