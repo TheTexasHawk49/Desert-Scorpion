@@ -13,6 +13,11 @@ class CCE
 		class setupSectors{};
 		class germanVictoryCountdown{};
 		class britishVictoryCountdown{};
+		class zone1capture{};
+		class zone2capture{};
+		class zone3capture{};
+		class zone4capture{};
+		class zone5capture{};
 	};
 	class JST
 	{
