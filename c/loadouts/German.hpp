@@ -151,7 +151,7 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
 //Leadership
 class ftl: rifleman {// FTL
   weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES};
+  magazines[] = {GLRIFLE_MAG,GLRIFLE_MAG_HE,GLRIFLE_MAG_SMOKE,LEADER_GRENADES,"LIB_Shg24:2","LIB_NB39:2"};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
