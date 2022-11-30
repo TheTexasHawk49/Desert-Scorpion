@@ -13,7 +13,7 @@ params ["_sector", "_owner", "_ownerOld"];
 			greatbritainControlsAllSectors = true;
 			[] spawn CCO_fnc_greatbritainnVictoryCountdown;
 			
-      Zone_1 enableSimulationGlobal true;
+      trigger_a enableSimulationGlobal true;
 
 		case INDEPENDENT:
 		{
