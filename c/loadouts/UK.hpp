@@ -36,7 +36,7 @@
 #define MMG_ATT ""
 // MAT
 #define MAT "LIB_M1A1_Bazooka"
-#define MAT_MAG "LIB_1Rnd_60mm_M6"
+#define MAT_MAG "LIB_1Rnd_60mm_M6:2"
 #define MAT_MAG2 ""
 #define MAT_OPTIC ""
 // Facewear
@@ -271,7 +271,10 @@ class Fic_Spotter: rifleman { //Base Spotter
 
 //MMG
 class mmgl: sl {// MMG Lead
-  backpack[] = {CARRYALL};
+  uniform[] = {fow_u_uk_bd40_private};
+  headgear[] = {fow_h_uk_bp_beret};
+  vest[] = {fow_v_uk_para_base};
+  backpack[] = {fow_b_uk_p37};
   magazines[] += {MMG_MAG};
 };
 class mmgg: ar {// MMG Gunner
@@ -285,7 +288,10 @@ class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
 
 //MAT
 class matl: sl {// MAT Lead
-  backpack[] = {CARRYALL};
+  uniform[] = {fow_u_uk_bd40_private};
+  headgear[] = {fow_h_uk_bp_beret};
+  vest[] = {fow_v_uk_para_base};
+  backpack[] = {fow_b_uk_p37};
   magazines[] += {MAT_MAG};
 };
 class matg: Fic_Soldier_Carbine {// MAT Gunner
@@ -293,11 +299,9 @@ class matg: Fic_Soldier_Carbine {// MAT Gunner
   magazines[] += {MAT_MAG};
   items[] += {BASE_MEDICAL};
   launchers[] = {MAT};
-  secondaryAttachments[] = {MAT_OPTIC};
 };
 class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
-  backpackItems[] = {};
-  magazines[] += {MAT_MAG};
+  magazines[] += {MAT_MAG,MAT_MAG};
   items[] += {BASE_MEDICAL};
 };
 
