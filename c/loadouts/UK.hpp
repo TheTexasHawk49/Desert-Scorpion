@@ -240,10 +240,9 @@ class sf_lat: sf_rifleman {//LAT Special Forces
 };
 
 class sf_ftl: sf_rifleman {//FTL Special Forces 
-  linkedItems[] = {LINKED,LEADER_LINKED};
+  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   weapons[] = {SF_SMG};
   magazines[] = {SF_SMG_MAG,"LIB_F1:2","LIB_US_M18:2"};
-  linkedItems[] += {BINOS};
 }; 
 
 class sf_sl: sf_ftl {//Squad Lead Special Forces  
