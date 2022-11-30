@@ -271,6 +271,8 @@ class Fic_Spotter: rifleman { //Base Spotter
 
 //MMG
 class mmgl: sl {// MMG Lead
+  weapons[] = {SF_SMG};
+  magazines[] = {SF_SMG_MAG};
   uniform[] = {fow_u_uk_bd40_private};
   headgear[] = {fow_h_uk_bp_beret};
   vest[] = {fow_v_uk_para_base};
@@ -294,6 +296,8 @@ class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
 
 //MAT
 class matl: sl {// MAT Lead
+  weapons[] = {SF_SMG};
+  magazines[] = {SF_SMG_MAG};
   uniform[] = {fow_u_uk_bd40_private};
   headgear[] = {fow_h_uk_bp_beret};
   vest[] = {fow_v_uk_para_base};
@@ -305,7 +309,6 @@ class matg: Fic_Soldier_Carbine {// MAT Gunner
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
   magazines[] += {MAT_MAG};
-  items[] += {BASE_MEDICAL};
   launchers[] = {MAT};
 };
 class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
