@@ -31,12 +31,12 @@
 #define AT "LIB_PIAT"
 #define AT_MAG "LIB_1Rnd_89m_PIAT:1"
 // MMG
-#define MMG ""
-#define MMG_MAG ""
+#define MMG "LIB_M1919A6"
+#define MMG_MAG "LIB_50Rnd_762x63"
 #define MMG_ATT ""
 // MAT
-#define MAT ""
-#define MAT_MAG ""
+#define MAT "LIB_M1A1_Bazooka"
+#define MAT_MAG "LIB_1Rnd_60mm_M6"
 #define MAT_MAG2 ""
 #define MAT_OPTIC ""
 // Facewear
