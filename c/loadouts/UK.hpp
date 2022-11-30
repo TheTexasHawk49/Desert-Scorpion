@@ -416,7 +416,7 @@ class pilot {// Pilot
   weapons[] = {PISTOL};
   magazines[] = {PISTOL_MAG,PISTOL_MAG,CREW_GRENADES};
   backpackItems[] = {SIDE_KEY,RADIO_LR};
-  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_MR};
+  items[] = {BASE_MEDICAL,TOOLS,LEADER_TOOLS,RADIO_LR};
   linkedItems[] = {LINKED,LEADER_LINKED};
 };
 class helicrew: pilot {// Aircrew
