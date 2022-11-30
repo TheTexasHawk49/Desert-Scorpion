@@ -52,6 +52,8 @@ CCE_vehs =
 	,[iapc2,				false,		(10 * 60),		{}]
 	,[iapc3,				false,		(10 * 60),		{}]
 	,[iapc4,				false,		(10 * 60),		{}]
+	,[iapc5,				false,		(10 * 60),		{}]
+	,[iapc6,				false,		(10 * 60),		{}]
 	,[ijeep1,			false,		(5 * 60),		{}]
 	,[ijeep2,			false,		(5 * 60),		{}]
 	,[ijeep3,			false,		(5 * 60),		{}]
@@ -60,14 +62,14 @@ CCE_vehs =
 	//,[ijeep6,			false,		(5 * 60),		{}]
 	//,[ijeep7,			false,		(5 * 60),		{}]
 	,[ijeepmg1,			false,		(15 * 60),		{}]
-	,[ijeepmg2,			false,		(15 * 60),		{}]
-	,[ijeepmg3,			false,		(15 * 60),		{}]
+	//,[ijeepmg2,			false,		(15 * 60),		{}]
+	//,[ijeepmg3,			false,		(15 * 60),		{}]
 	,[itruck1,			false,		(5 * 60),		{}]
 	,[itruck2,			false,		(5 * 60),		{}]
 	,[itruck3,			false,		(5 * 60),		{}]
 	,[itruck4,			false,		(5 * 60),		{}]
 	,[itruck5,			false,		(5 * 60),		{}]
-	,[itruck6,			false,		(5 * 60),		{}]
+	//,[itruck6,			false,		(5 * 60),		{}]
 	,[ifuel,				false,		(30 * 60),		{}]
 	,[iammo,				false,		(30 * 60),		{}]
 	,[irepair,			false,		(30 * 60),		{}]
@@ -75,8 +77,7 @@ CCE_vehs =
 	,[iarty1,			false,		(30 * 60),		{}]
 	,[iarty2,			false,		(30 * 60),		{}]
 	,[iarty3,			false,		(30 * 60),		{}]
-	,[imort1,			false,		(15 * 60),		{}]
-	,[imort2,			false,		(15 * 60),		{}]
+	,[iplane1,			false, 		(30 * 60),		{}]
 ];
 
 // enable/disable abandoned vehicle auto respawn
@@ -93,6 +94,8 @@ VehBannedMagazines =
 [
 	"LIB_60x_SprGr34_KWK40_HE"
 	,"LIB_60x_M42A1_M1_HE"
+	,"LIB_Shell_76L55_HEMk1_HE"
+	,"CSA38_HE_M48"
 ];
 
 /*///////////////////////////////////////////////////////
