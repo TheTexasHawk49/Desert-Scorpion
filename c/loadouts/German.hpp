@@ -178,7 +178,7 @@ class sgt: plt {// Platoon Sergeant
 class fac: plt {// RTO
   weapons[] = {CARBINE};
   magazines[] = {CARBINE_MAG,SIDE_FAC_GRENADES,PISTOL_MAG};
-  linkedItems[] = {LINKED,LEADER_LINKED};
+  linkedItems[] = {LINKED,LEADER_LINKED,BINOS};
   headgear[] = {"H_LIB_DAK_Cap"};
   goggles[] = {"G_LIB_GER_Headset"};
   uniform[] = {CAMO_UNIFORM};

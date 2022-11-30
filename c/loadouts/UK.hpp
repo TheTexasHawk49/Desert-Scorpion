@@ -243,6 +243,7 @@ class sf_ftl: sf_rifleman {//FTL Special Forces
   linkedItems[] = {LINKED,LEADER_LINKED};
   weapons[] = {SF_SMG};
   magazines[] = {SF_SMG_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  linkedItems[] += {BINOS};
 }; 
 
 class sf_sl: sf_ftl {//Squad Lead Special Forces  
@@ -253,6 +254,7 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
   items[] += {RADIO_LR};
   weapons[] = {CARBINE};
   magazines[] = {CARBINE_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  linkedItems[] += {BINOS};
 };
 
  class sf_sm: sf_rifleman {//Medic Special Forces
