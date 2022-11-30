@@ -10,7 +10,7 @@
 #define CAMO_BACKPACK "B_LIB_UK_HSack_Tea"
 #define CAMO_HEADGEAR "H_LIB_UK_Helmet_Mk2_Desert_Bowed"
 // Rifle
-#define RIFLE "LIB_LeeEnfield_No4_CUP"
+#define RIFLE "LIB_LeeEnfield_No4"
 #define RIFLE_MAG "LIB_10Rnd_770x56:5"
 #define RIFLE_ATTACHMENTS ""
 #define AR_ATTACHMENTS RIFLE_ATTACHMENTS, ""
@@ -22,8 +22,8 @@
 #define GLRIFLE_MAG_SMOKE ""
 #define GLRIFLE_MAG_HE "LIB_1Rnd_G_MillsBomb:10"
 // Carbine
-#define CARBINE "CSA38_stenMkIII"
-#define CARBINE_MAG "csa38_32_9x19:10"
+#define CARBINE "LIB_M1_Garand"
+#define CARBINE_MAG "LIB_8Rnd_762x63:6"
 // AR
 #define AR "CSA38_BRENMKII"
 #define AR_MAG "CSA38_7_7_30x56R:16"
@@ -32,7 +32,7 @@
 #define AT_MAG "LIB_1Rnd_89m_PIAT:1"
 // MMG
 #define MMG "LIB_M1919A6"
-#define MMG_MAG "LIB_50Rnd_762x63"
+#define MMG_MAG "LIB_50Rnd_762x63:2"
 #define MMG_ATT ""
 // MAT
 #define MAT "LIB_M1A1_Bazooka"
@@ -70,8 +70,8 @@
 #define SPOTTER_MAG RIFLE_MAG
 #define SPOTTER_ATTACHMENTS "rhsusf_acc_ACOG","rhsusf_acc_anpeq15side_bk","rhsusf_acc_grip1"
 // SMG
-#define SMG CARBINE
-#define SMG_MAG CARBINE_MAG
+#define SMG "CSA38_stenMkIII"
+#define SMG_MAG "csa38_32_9x19:10"
 // Pistol
 #define PISTOL "LIB_Webley_mk6"
 #define PISTOL_MAG "LIB_6Rnd_455:3"
@@ -152,8 +152,8 @@ class Fic_Soldier_Carbine: rifleman {// carbine-man
 
 //Leadership
 class ftl: rifleman {// FTL
-  weapons[] = {CARBINE};
-  magazines[] = {CARBINE_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  weapons[] = {SMG};
+  magazines[] = {SMG_MAG,"LIB_F1:2","LIB_US_M18:2"};
   items[] += {LEADER_TOOLS};
   linkedItems[] += {LEADER_LINKED,BINOS};
 };
@@ -235,8 +235,8 @@ class sf_rifleman {//Gren Special Forces
   
 class sf_lat: sf_rifleman {//LAT Special Forces 
   launchers[] = {AT};
-  weapons[] = {SF_SMG};
-  magazines[] = {SF_SMG_MAG,AT_MAG,AT_MAG,AT_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  weapons[] = {CARBINE};
+  magazines[] = {CARBINE_MAG,AT_MAG,AT_MAG,AT_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 
 class sf_ftl: sf_rifleman {//FTL Special Forces 
@@ -251,8 +251,8 @@ class sf_sl: sf_ftl {//Squad Lead Special Forces
  class sf_rifleman_02: sf_rifleman {//RTO Special Forces 
   backpack[] = {fow_b_uk_p37_radio};
   items[] += {RADIO_LR};
-  weapons[] = {GLRIFLE};
-  magazines[] = {GLRIFLE_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  weapons[] = {CARBINE};
+  magazines[] = {CARBINE_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 
  class sf_sm: sf_rifleman {//Medic Special Forces
@@ -428,8 +428,8 @@ class vicd: vicc {// Repair Specialist
 class vicl: vicc {// Vehicle Commander
 headgear[] = {fow_h_uk_beret_rtr_headset};
 backpackItems[] = {RADIO_LR};
-weapons[] = {CARBINE};
-magazines[] = {CARBINE_MAG};
+weapons[] = {SMG};
+magazines[] = {SMG_MAG};
 };
 
 
