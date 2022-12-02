@@ -78,6 +78,7 @@ CCE_vehs =
 	//,[itruck6,			false,		(5 * 60),		{}]
 	,[ifuel,				false,		(30 * 60),		{}]
 	,[iammo,				false,		(30 * 60),		{}]
+	,[iammo2,				false,		(30 * 60),		{}]
 	,[irepair,			false,		(30 * 60),		{}]
 	,[imed,				false,		(30 * 60),		{}]
 	,[iarty1,			false,		(30 * 60),		{}]
