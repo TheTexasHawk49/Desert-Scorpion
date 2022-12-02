@@ -91,7 +91,7 @@ CCE_vehs =
 CCE_vehicleCleanerOn = true;
 
 // seconds before an abandoned vehicle is deleted and the respawn wait begins (use multiples of 10)
-CCE_vehicleCleanerTime = (3 * 60);
+CCE_vehicleCleanerTime = (5 * 60);
 
 // meters from friendlies for a vehicle to be considered abandoned
 CCE_vehicleCleanerDis = 200;
@@ -103,6 +103,7 @@ VehBannedMagazines =
 	,"LIB_60x_M42A1_M1_HE"
 	,"LIB_Shell_76L55_HEMk1_HE"
 	,"CSA38_HE_M48"
+	,"LIB_Shell_20L55_SprGr_HE"
 ];
 
 /*///////////////////////////////////////////////////////
