@@ -55,7 +55,7 @@ KPCF_whitelistedItems = [
 
 // Defines the available weapons
 KPCF_weapons = [
-    "fow_w_mp40","fow_w_g43","fow_w_mg42","CSA38_kar98k","LIB_P08","LIB_RPzB","fow_w_pzfaust_60","LIB_LeeEnfield_No4","CSA38_stenMkIII","CSA38_BRENMKII","CSA38_stenMkVI","LIB_Webley_mk6","LIB_PIAT"
+    "fow_w_mp40","fow_w_g43","fow_w_mg42","CSA38_kar98k","LIB_P08","LIB_RPzB","fow_w_pzfaust_60","LIB_LeeEnfield_No4","CSA38_stenMkIII","CSA38_BRENMKII","CSA38_stenMkVI","LIB_Webley_mk6","LIB_PIAT","LIB_FLARE_PISTOL"
 ];
 
 // Defines the available grenades
