@@ -278,6 +278,7 @@ class mmgl: sl {// MMG Lead
   headgear[] = {fow_h_uk_bp_beret};
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
+  linkedItems[] += {BINOS};
 };
 class mmgg: ar {// MMG Gunner
   uniform[] = {fow_u_uk_bd40_private};
@@ -285,7 +286,7 @@ class mmgg: ar {// MMG Gunner
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
   weapons[] = {MMG};
-  magazines[] = {MMG_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  magazines[] = {MMG_MAG,MMG_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   uniform[] = {fow_u_uk_bd40_private};
@@ -293,6 +294,7 @@ class mmgag: Fic_Spotter {// MMG Spotter/Ammo Bearer
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
   backpackItems[] += {MMG_MAG,MMG_MAG};
+  linkedItems[] += {BINOS};
 };
 
 //MAT
@@ -303,6 +305,7 @@ class matl: sl {// MAT Lead
   headgear[] = {fow_h_uk_bp_beret};
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
+  linkedItems[] += {BINOS};
 };
 class matg: Fic_Soldier_Carbine {// MAT Gunner
   uniform[] = {fow_u_uk_bd40_private};
@@ -318,19 +321,22 @@ class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
   vest[] = {fow_v_uk_para_base};
   backpack[] = {fow_b_uk_p37};
   magazines[] += {MAT_MAG,MAT_MAG};
+  linkedItems[] += {BINOS};
 };
 
 //HMG
 class hmgl: sl {// HMG Lead
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,};
+  magazines[] = {RIFLE_MAG};
+  linkedItems[] += {BINOS};
 };
 class hmgg: rifleman {// HMG Gunner
   weapons[] = {MMG};
-  magazines[] = {MMG_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
+  magazines[] = {MMG_MAG,MMG_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 class hmgag: rifleman {// HMG Spotter
-   backpackItems[] += {MMG_MAG,MMG_MAG};
+  backpackItems[] += {MMG_MAG,MMG_MAG};
+  linkedItems[] += {BINOS};
 };
 
 //HAT
