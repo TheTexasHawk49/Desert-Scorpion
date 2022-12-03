@@ -321,23 +321,18 @@ class matag: Fic_Spotter {// MAT Spotter/Ammo Bearer
 };
 
 //HMG
-/* class hmgl: sl {// HMG Lead
+class hmgl: sl {// HMG Lead
   weapons[] = {RIFLE};
-  magazines[] = {RIFLE_MAG,LEADER_GRENADES,PISTOL_MAG,HMG_MAG};
-  backpack[] = {CARRYALL};
-  launchers[] = {HMG_TRI_LO};
-  items[] += {BASE_BALLISTICS};
+  magazines[] = {RIFLE_MAG,};
 };
 class hmgg: rifleman {// HMG Gunner
-  backpack[] = {fow_b_uk_vickers_weapon};
-  magazines[] += {HMG_MAG};
+  weapons[] = {MMG};
+  magazines[] = {MMG_MAG,PISTOL_MAG,"LIB_F1:2","LIB_US_M18:2"};
 };
 class hmgag: rifleman {// HMG Spotter
-  backpack[] = {fow_b_uk_vickers_support};
-  magazines[] += {HMG_MAG};
-  items[] += {BASE_BALLISTICS}; 
+   backpackItems[] += {MMG_MAG,MMG_MAG};
 };
-*/
+
 //HAT
 class hatl: sl {// HAT Lead
   weapons[] = {RIFLE};
